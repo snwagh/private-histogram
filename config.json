@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+  "app": {
+    "version": "0.1.0",
+    "run": {
+      "command": ["python", "main.py"],
+      "schedule": "* * * * *", 
+      "interval": "10"
+    },
+    "env": {},
+    "platforms": ["darwin"],
+    "pre_install": [],
+    "post_install": [],
+    "pre_update": [],
+    "post_update": []
+  }
+}
