@@ -1,7 +1,7 @@
 # File: app_base.py
 import json
 from pathlib import Path
-from syftbox.lib import ClientConfig
+from syftbox.lib import Client
 from loguru import logger
 
 
@@ -43,7 +43,7 @@ class ApplicationBase:
 
     def __init__(self, client_config_path):
         # Load client configuration
-        self.client_config = ClientConfig.load(client_config_path)
+        self.client_config = Client.load()
         self.user_id = self.client_config["email"]
 
     def app_dir(self, user_id):
